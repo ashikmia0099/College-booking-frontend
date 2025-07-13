@@ -18,7 +18,7 @@ export default function Page() {
 
 
     const params = useParams();
-    const roter = useRouter();
+   
     const id = params?.id;
 
 
