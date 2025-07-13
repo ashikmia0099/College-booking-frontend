@@ -9,7 +9,7 @@ import image1 from '../../../../../public/banner/college1.jpg'
 import { useAuth } from '../../../../../AuthContext/AuthContext';
 import { Button } from '@/components/ui/button';
 
-export default function page() {
+export default function Page() {
 
 
 
@@ -50,24 +50,6 @@ export default function page() {
 
     console.log('college data single', singledata)
 
-
-
-    //   "_id": "6873507990c8427da1055c01",
-    //     "studentEmail": "ashik123@gmail.com",
-    //     "studentName": "ashiwk",
-    //     "Subject": "Bangla",
-    //     "Phone": "01403226122",
-    //     "Address": "Signboard , Dhaka, Bangladesh",
-    //     "Birth_Date": "2025-07-10",
-    //     "College_Name": "Dhaka College",
-    //     "Admission_Start": "2025-07-15",
-    //     "Admission_End": "2025-07-24",
-    //     "Admission_Process": "Online Process",
-    //     "Events": "Poetry Slam, Math Olympiad",
-    //     "Resarch_Name": "Statistics, Zoology",
-    //     "Sports_Name": "Cricket, Football",
-    //     "College_Image": "https://i.ibb.co/XkGqJLY7/college3.jpg",
-    //     "admittedAt": "2025-07-13T06:21:45.747Z"
 
 
     return (

@@ -30,7 +30,7 @@ export default function Contact() {
             .then(data => {
                 setcollege_Data(data);
             })
-    }, [])
+    }, [setcollege_Data])
 
 
     console.log('college data', college_Data)

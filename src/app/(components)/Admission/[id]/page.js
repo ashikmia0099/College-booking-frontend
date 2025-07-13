@@ -3,7 +3,6 @@
 
 'use client'
 
-import uploadToImgBB from '@/app/ImageUpload_Site/UploadImageBBImage';
 import React, { useEffect, useState } from 'react';
 import Swal from 'sweetalert2';
 import { useAuth } from '../../../../../AuthContext/AuthContext';
@@ -11,11 +10,7 @@ import { useParams, useRouter } from 'next/navigation';
 
 export default function All_College_Deshboard() {
 
-
-
-
-
-    const { college_Data, setcollege_Data, user, setUser } = useAuth();
+    const { user, college_Data, setcollege_Data, setUser } = useAuth();
     const [singledata, setSingleData] = useState([]);
     const [userSingleData, setuserSingleData] = useState([]);
 
@@ -27,17 +22,23 @@ export default function All_College_Deshboard() {
 
 
 
+    // useEffect(() => {
+    //     fetch('http://localhost:5000/all_college')
+    //         .then(res => res.json())
+    //         .then(data => {
+    //             setcollege_Data(data);
+    //         })
+    // }, [])
+
+
+    // console.log('college data', college_Data)
 
     useEffect(() => {
-        fetch('http://localhost:5000/all_college')
-            .then(res => res.json())
-            .then(data => {
-                setcollege_Data(data);
-            })
-    }, [])
+        fetch("http://localhost:5000/all_college")
+            .then((res) => res.json())
+            .then((data) => setcollege_Data(data));
+    }, [setcollege_Data]); // ✅ include setcollege_Data in dependencies
 
-
-    console.log('college data', college_Data)
 
 
 
@@ -63,7 +64,7 @@ export default function All_College_Deshboard() {
             .then(data => {
                 setUser(data);
             })
-    }, [])
+    }, [setUser])
 
 
     console.log('user data', user)
@@ -126,7 +127,7 @@ export default function All_College_Deshboard() {
 
             const res = await response.json();
 
-           
+
             if (res.insertedId) {
                 // ✅ Save admitted college data
                 const admittedCollege = {
@@ -138,12 +139,12 @@ export default function All_College_Deshboard() {
                     Birth_Date: Birth_Date,
                     College_Name: College_Name,
                     Admission_Start: singledata.Admission_Start,
-                    Admission_End:  singledata.Admission_End,
-                    Admission_Process:  singledata.Admission_Process,
+                    Admission_End: singledata.Admission_End,
+                    Admission_Process: singledata.Admission_Process,
                     Events: singledata.Events,
-                    Resarch_Name:  singledata.Resarch_Name,
-                    Sports_Name:  singledata.Sports_Name,
-                    College_Image:  singledata.College_Image,
+                    Resarch_Name: singledata.Resarch_Name,
+                    Sports_Name: singledata.Sports_Name,
+                    College_Image: singledata.College_Image,
                     admittedAt: new Date().toISOString()
                 };
 
@@ -180,13 +181,6 @@ export default function All_College_Deshboard() {
             });
         }
     };
-
-
-
-
-
-
-
 
     return (
 
