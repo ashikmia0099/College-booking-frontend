@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "Narayanganj College",
+    "image": "/banner/college1.jpg",
+    "admissionStart": "2025-02-15",
+    "admissionEnd": "2025-03-15",
+    "admissionProcess": "Online application, written test, and viva.",
+    "events": ["Science Fair", "Cultural Week", "AI Seminar"],
+    "research": "Focus on AI, Robotics, and Environmental Science.",
+    "sports": ["Football", "Cricket", "Badminton"]
+  },
+  {
+    "id": 2,
+    "name": "Dhaka College",
+    "image": "/banner/college2.jpg",
+    "admissionStart": "2025-03-01",
+    "admissionEnd": "2025-03-30",
+    "admissionProcess": "Merit-based GPA and personal interview.",
+    "events": ["Job Fair", "Hackathon", "Literature Festival"],
+    "research": "Physics, Chemistry, and Social Science research.",
+    "sports": ["Basketball", "Table Tennis", "Chess"]
+  },
+  {
+    "id": 3,
+    "name": "Rajshahi Government College",
+    "image": "/banner/college3.jpg",
+    "admissionStart": "2025-01-20",
+    "admissionEnd": "2025-02-10",
+    "admissionProcess": "Written exam and interview.",
+    "events": ["Art Exhibition", "Science Expo"],
+    "research": "Environmental research and urban planning.",
+    "sports": ["Volleyball", "Athletics", "Kabaddi"]
+  },
+  {
+    "id": 4,
+    "name": "Comilla Victoria College",
+    "image": "/banner/college4.jpg",
+    "admissionStart": "2025-04-01",
+    "admissionEnd": "2025-04-30",
+    "admissionProcess": "GPA screening and aptitude test.",
+    "events": ["Debate Fest", "Drama Festival"],
+    "research": "Bangla Literature, Political Studies.",
+    "sports": ["Cricket", "Badminton", "Swimming"]
+  },
+  {
+    "id": 5,
+    "name": "Chittagong College",
+    "image": "/banner/college5.jpg",
+    "admissionStart": "2025-05-01",
+    "admissionEnd": "2025-05-25",
+    "admissionProcess": "Online form and screening test.",
+    "events": ["Startup Week", "Innovation Summit"],
+    "research": "Biotech, Marine Studies.",
+    "sports": ["Football", "Basketball", "Rugby"]
+  },
+  {
+    "id": 6,
+    "name": "Sylhet Government College",
+    "image": "/banner/college6.jpg",
+    "admissionStart": "2025-02-10",
+    "admissionEnd": "2025-03-05",
+    "admissionProcess": "Direct GPA-based admission.",
+    "events": ["Language Day", "Quiz Bowl"],
+    "research": "Cultural Heritage, Soil Science.",
+    "sports": ["Chess", "Karate", "Handball"]
+  },
+  {
+    "id": 7,
+    "name": "Khulna College",
+    "image": "/banner/college7.jpg",
+    "admissionStart": "2025-03-10",
+    "admissionEnd": "2025-04-05",
+    "admissionProcess": "MCQ test and oral exam.",
+    "events": ["Tech Carnival", "Robotics Day"],
+    "research": "Cybersecurity and IoT.",
+    "sports": ["Badminton", "Table Tennis", "Football"]
+  },
+  {
+    "id": 8,
+    "name": "Barisal Govt College",
+    "image": "/banner/college8.jpg",
+    "admissionStart": "2025-01-01",
+    "admissionEnd": "2025-01-31",
+    "admissionProcess": "Online application and selection.",
+    "events": ["Book Fair", "Photography Contest"],
+    "research": "Agricultural Studies.",
+    "sports": ["Cricket", "Basketball", "Swimming"]
+  },
+  {
+    "id": 9,
+    "name": "Mymensingh Govt College",
+    "image": "/banner/college9.jpg",
+    "admissionStart": "2025-02-01",
+    "admissionEnd": "2025-02-28",
+    "admissionProcess": "Merit + Written Test.",
+    "events": ["Poetry Slam", "Math Olympiad"],
+    "research": "Statistics, Zoology.",
+    "sports": ["Athletics", "Football", "Hockey"]
+  },
+  {
+    "id": 10,
+    "name": "Pabna Govt College",
+    "image": "/banner/college10.jpg",
+    "admissionStart": "2025-06-01",
+    "admissionEnd": "2025-06-20",
+    "admissionProcess": "GPA-based shortlist and interview.",
+    "events": ["Science Olympiad", "Career Day"],
+    "research": "Machine Learning, Local Economy.",
+    "sports": ["Cricket", "Tennis", "Kabaddi"]
+  }
+]
