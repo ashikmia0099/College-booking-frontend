@@ -29,7 +29,7 @@ export default function My_College() {
 
     useEffect(() => {
         if (user?.email) {
-            fetch(`https://college-booking-backend.vercel.app/user_colleges/${user.email}`)
+            fetch(`https://college-booking-backend-ro5u.onrender.com/user_colleges/${user.email}`)
                 .then(res => res.json())
                 .then(data => {
                     setuserAlldata(data)
@@ -59,7 +59,7 @@ export default function My_College() {
     // user data
 
     useEffect(() => {
-        fetch('https://college-booking-backend.vercel.app/all_users')
+        fetch('https://college-booking-backend-ro5u.onrender.com/all_users')
             .then(res => res.json())
             .then(data => {
                 setUser(data);

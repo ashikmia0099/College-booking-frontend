@@ -58,7 +58,7 @@ export default function All_College() {
 
 
   useEffect(() => {
-    fetch('https://college-booking-backend.vercel.app/all_college')
+    fetch('https://college-booking-backend-ro5u.onrender.com/all_college')
       .then(res => res.json())
       .then(data => {
         setcollege_Data(data);

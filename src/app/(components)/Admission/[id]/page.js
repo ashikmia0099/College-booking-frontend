@@ -23,7 +23,7 @@ export default function All_College_Deshboard() {
 
 
     // useEffect(() => {
-    //     fetch('https://college-booking-backend.vercel.app/all_college')
+    //     fetch('https://college-booking-backend-ro5u.onrender.com/all_college')
     //         .then(res => res.json())
     //         .then(data => {
     //             setcollege_Data(data);
@@ -34,7 +34,7 @@ export default function All_College_Deshboard() {
     // console.log('college data', college_Data)
 
     useEffect(() => {
-        fetch("https://college-booking-backend.vercel.app/all_college")
+        fetch("https://college-booking-backend-ro5u.onrender.com/all_college")
             .then((res) => res.json())
             .then((data) => setcollege_Data(data));
     }, [setcollege_Data]); // ✅ include setcollege_Data in dependencies
@@ -59,7 +59,7 @@ export default function All_College_Deshboard() {
     // user data
 
     useEffect(() => {
-        fetch('https://college-booking-backend.vercel.app/all_users')
+        fetch('https://college-booking-backend-ro5u.onrender.com/all_users')
             .then(res => res.json())
             .then(data => {
                 setUser(data);
@@ -119,7 +119,7 @@ export default function All_College_Deshboard() {
 
 
         try {
-            const response = await fetch("https://college-booking-backend.vercel.app/admision_Data", {
+            const response = await fetch("https://college-booking-backend-ro5u.onrender.com/admision_Data", {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(postedData),
@@ -148,7 +148,7 @@ export default function All_College_Deshboard() {
                     admittedAt: new Date().toISOString()
                 };
 
-                await fetch("https://college-booking-backend.vercel.app/user_colleges", {
+                await fetch("https://college-booking-backend-ro5u.onrender.com/user_colleges", {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(admittedCollege),
