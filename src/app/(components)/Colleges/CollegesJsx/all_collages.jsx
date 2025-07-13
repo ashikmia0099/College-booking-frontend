@@ -20,7 +20,7 @@ export default function All_collages() {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/all_college')
+        fetch('https://college-booking-backend.vercel.app/all_college')
             .then(res => res.json())
             .then(data => {
                 setcollege_Data(data);

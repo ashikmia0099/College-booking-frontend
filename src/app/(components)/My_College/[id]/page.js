@@ -26,7 +26,7 @@ export default function Page() {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/user_colleges')
+        fetch('https://college-booking-backend.vercel.app/user_colleges')
             .then(res => res.json())
             .then(data => {
                 setcollege_Data(data);

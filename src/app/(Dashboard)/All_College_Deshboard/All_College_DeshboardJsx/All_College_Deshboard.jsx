@@ -47,7 +47,7 @@ export default function All_College_Deshboard() {
 
 
         try {
-            const response = await fetch("http://localhost:5000/all_college", {
+            const response = await fetch("https://college-booking-backend.vercel.app/all_college", {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(postedData),

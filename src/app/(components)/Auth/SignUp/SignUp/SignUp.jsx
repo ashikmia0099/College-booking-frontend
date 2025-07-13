@@ -43,7 +43,7 @@ export default function Auth({ onSwitchToSignIn }) {
       // 3️⃣ Send user data to your MongoDB via API
       const newUser = { name, email, createdAt: new Date().toISOString() }
 
-      const response = await fetch('http://localhost:5000/all_users', {
+      const response = await fetch('https://college-booking-backend.vercel.app/all_users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
