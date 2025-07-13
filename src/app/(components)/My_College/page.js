@@ -1,10 +1,11 @@
-import React from 'react'
-import My_College from './My_CollegeJsx/My_College'
+'use client';
 
-export default function page() {
-  return (
-    <div>
-        <My_College></My_College>
-    </div>
-  )
+import React from 'react';
+import My_College from './My_CollegeJsx/My_College';
+import WithAuth from '../../../../firebase/WithAuth';
+
+function Page() {
+  return <My_College />;
 }
+
+export default Page;

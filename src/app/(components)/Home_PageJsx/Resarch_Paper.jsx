@@ -60,66 +60,8 @@ export default function Resarch_Paper() {
                     className="mySwiper"
 
                 >
-                    <SwiperSlide><div className=''>
-                        <div className=' flex items-center justify-between px-2 py-2'>
-                            <span className=' text-lg uppercase font-semibold text-black'>hello </span>
-                            <span className=' text-lg uppercase font-semibold text-black'>hello </span>
-                        </div>
-                        <div className=' relative'>
-                            <Image src={image1} className=' w-full h-60 rounded-2xl'></Image>
-                            <div className=' h-20 w-20 rounded-2xl bg-[#ffffffb0] grid items-center justify-center absolute top-2 right-2'>
-                                <h1 className=' text-3xl font-extrabold'>10</h1>
-                                
-                                <h1 className=' text-xl font-semibold capitalize -mt-2'>july</h1>
-                            </div>
-                        </div>
-                        <div className=' py-5 px-3 space-y-2'>
-                            <h3 className=' text-xl font-bold text-black'>The premier choice for business marketing highly.</h3>
 
-                        </div>
-                    </div>
-                    </SwiperSlide>
-                   
-                    <SwiperSlide><div className=''>
-                        <div className=' flex items-center justify-between px-2 py-2'>
-                            <span className=' text-lg uppercase font-semibold text-black'>hello </span>
-                            <span className=' text-lg uppercase font-semibold text-black'>hello </span>
-                        </div>
-                        <div className=' relative'>
-                            <Image src={image1} className=' w-full h-60 rounded-2xl'></Image>
-                            <div className=' h-20 w-20 rounded-2xl bg-[#ffffffb0] grid items-center justify-center absolute top-2 right-2'>
-                                <h1 className=' text-3xl font-extrabold'>10</h1>
-                                
-                                <h1 className=' text-xl font-semibold capitalize -mt-2'>july</h1>
-                            </div>
-                        </div>
-                        <div className=' py-5 px-3 space-y-2'>
-                            <h3 className=' text-xl font-bold text-black'>The premier choice for business marketing highly.</h3>
 
-                        </div>
-                    </div>
-                    </SwiperSlide>
-                   
-                    <SwiperSlide><div className=''>
-                        <div className=' flex items-center justify-between px-2 py-2'>
-                            <span className=' text-lg uppercase font-semibold text-black'>hello </span>
-                            <span className=' text-lg uppercase font-semibold text-black'>hello </span>
-                        </div>
-                        <div className=' relative'>
-                            <Image src={image1} className=' w-full h-60 rounded-2xl'></Image>
-                            <div className=' h-20 w-20 rounded-2xl bg-[#ffffffb0] grid items-center justify-center absolute top-2 right-2'>
-                                <h1 className=' text-3xl font-extrabold'>10</h1>
-                                
-                                <h1 className=' text-xl font-semibold capitalize -mt-2'>july</h1>
-                            </div>
-                        </div>
-                        <div className=' py-5 px-3 space-y-2'>
-                            <h3 className=' text-xl font-bold text-black'>The premier choice for business marketing highly.</h3>
-
-                        </div>
-                    </div>
-                    </SwiperSlide>
-                   
                     <SwiperSlide><div className=''>
                         <div className=' flex items-center justify-between px-2 py-2'>
                             <span className=' text-lg uppercase font-semibold text-black'>hello </span>
@@ -127,10 +69,10 @@ export default function Resarch_Paper() {
                         </div>
                         <div className=' relative'>
                             <Image src={image1} className=' w-full h-60 rounded-2xl'></Image>
-                            <div className=' h-20 w-20 rounded-2xl bg-[#ffffffb0] grid items-center justify-center absolute top-2 right-2'>
-                                <h1 className=' text-3xl font-extrabold'>10</h1>
-                                
-                                <h1 className=' text-xl font-semibold capitalize -mt-2'>july</h1>
+                            <div className=' h-20 w-20 rounded-2xl bg-white/30 backdrop-blur-sm grid items-center justify-center absolute top-2 right-2'>
+                                <h1 className=' text-3xl font-extrabold text-black'>10</h1>
+
+                                <h1 className=' text-xl font-semibold capitalize -mt-2 text-black'>july</h1>
                             </div>
                         </div>
                         <div className=' py-5 px-3 space-y-2'>
@@ -139,38 +81,20 @@ export default function Resarch_Paper() {
                         </div>
                     </div>
                     </SwiperSlide>
-                   
-                    <SwiperSlide><div className=''>
-                        <div className=' flex items-center justify-between px-2 py-2'>
-                            <span className=' text-lg uppercase font-semibold text-black'>hello </span>
-                            <span className=' text-lg uppercase font-semibold text-black'>hello </span>
-                        </div>
-                        <div className=' relative'>
-                            <Image src={image1} className=' w-full h-60 rounded-2xl'></Image>
-                            <div className=' h-20 w-20 rounded-2xl bg-[#ffffffb0] grid items-center justify-center absolute top-2 right-2'>
-                                <h1 className=' text-3xl font-extrabold'>10</h1>
-                                
-                                <h1 className=' text-xl font-semibold capitalize -mt-2'>july</h1>
-                            </div>
-                        </div>
-                        <div className=' py-5 px-3 space-y-2'>
-                            <h3 className=' text-xl font-bold text-balck'>The premier choice for business marketing highly.</h3>
 
-                        </div>
-                    </div>
-                    </SwiperSlide>
-                   
+
+
                     <SwiperSlide><div className=''>
                         <div className=' flex items-center justify-between px-2 py-2'>
                             <span className=' text-lg uppercase font-semibold text-black'>hello </span>
-                            <span className=' text-lg uppercase font-semibold text-black'>hello </span>
+                            <span className=' text-lg uppercase font-semibold text-black' >hello </span>
                         </div>
                         <div className=' relative'>
                             <Image src={image1} className=' w-full h-60 rounded-2xl'></Image>
-                            <div className=' h-20 w-20 rounded-2xl bg-[#ffffffb0] grid items-center justify-center absolute top-2 right-2'>
-                                <h1 className=' text-3xl font-extrabold'>10</h1>
-                                
-                                <h1 className=' text-xl font-semibold capitalize -mt-2'>july</h1>
+                            <div className=' h-20 w-20 rounded-2xl bg-white/30 backdrop-blur-sm grid items-center justify-center absolute top-2 right-2'>
+                                <h1 className=' text-3xl font-extrabold text-black'>10</h1>
+
+                                <h1 className=' text-xl font-semibold capitalize -mt-2 text-black'>july</h1>
                             </div>
                         </div>
                         <div className=' py-5 px-3 space-y-2'>
@@ -179,7 +103,76 @@ export default function Resarch_Paper() {
                         </div>
                     </div>
                     </SwiperSlide>
-                   
+
+
+
+                    <SwiperSlide><div className=''>
+                        <div className=' flex items-center justify-between px-2 py-2'>
+                            <span className=' text-lg uppercase font-semibold text-black'>hello </span>
+                            <span className=' text-lg uppercase font-semibold text-black' >hello </span>
+                        </div>
+                        <div className=' relative'>
+                            <Image src={image1} className=' w-full h-60 rounded-2xl'></Image>
+                            <div className=' h-20 w-20 rounded-2xl bg-white/30 backdrop-blur-sm grid items-center justify-center absolute top-2 right-2'>
+                                <h1 className=' text-3xl font-extrabold text-black'>10</h1>
+
+                                <h1 className=' text-xl font-semibold capitalize -mt-2 text-black'>july</h1>
+                            </div>
+                        </div>
+                        <div className=' py-5 px-3 space-y-2'>
+                            <h3 className=' text-xl font-bold text-black'>The premier choice for business marketing highly.</h3>
+
+                        </div>
+                    </div>
+                    </SwiperSlide>
+
+
+
+                    <SwiperSlide><div className=''>
+                        <div className=' flex items-center justify-between px-2 py-2'>
+                            <span className=' text-lg uppercase font-semibold text-black'>hello </span>
+                            <span className=' text-lg uppercase font-semibold text-black' >hello </span>
+                        </div>
+                        <div className=' relative'>
+                            <Image src={image1} className=' w-full h-60 rounded-2xl'></Image>
+                            <div className=' h-20 w-20 rounded-2xl bg-white/30 backdrop-blur-sm grid items-center justify-center absolute top-2 right-2'>
+                                <h1 className=' text-3xl font-extrabold text-black'>10</h1>
+
+                                <h1 className=' text-xl font-semibold capitalize -mt-2 text-black'>july</h1>
+                            </div>
+                        </div>
+                        <div className=' py-5 px-3 space-y-2'>
+                            <h3 className=' text-xl font-bold text-black'>The premier choice for business marketing highly.</h3>
+
+                        </div>
+                    </div>
+                    </SwiperSlide>
+
+
+
+                    <SwiperSlide><div className=''>
+                        <div className=' flex items-center justify-between px-2 py-2'>
+                            <span className=' text-lg uppercase font-semibold text-black'>hello </span>
+                            <span className=' text-lg uppercase font-semibold text-black' >hello </span>
+                        </div>
+                        <div className=' relative'>
+                            <Image src={image1} className=' w-full h-60 rounded-2xl'></Image>
+                            <div className=' h-20 w-20 rounded-2xl bg-white/30 backdrop-blur-sm grid items-center justify-center absolute top-2 right-2'>
+                                <h1 className=' text-3xl font-extrabold text-black'>10</h1>
+
+                                <h1 className=' text-xl font-semibold capitalize -mt-2 text-black'>july</h1>
+                            </div>
+                        </div>
+                        <div className=' py-5 px-3 space-y-2'>
+                            <h3 className=' text-xl font-bold text-black'>The premier choice for business marketing highly.</h3>
+
+                        </div>
+                    </div>
+                    </SwiperSlide>
+
+
+
+
 
                 </Swiper>
 

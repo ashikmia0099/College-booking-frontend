@@ -45,7 +45,7 @@ export const AuthProvider = ({ children }) => {
     const [social_link, setSocial_link] = useState([])
 
 
-     const SignInWithGoogle = () => {
+    const SignInWithGoogle = () => {
         setLoading(true);
         return signInWithPopup(auth, provider)
 
@@ -55,15 +55,15 @@ export const AuthProvider = ({ children }) => {
 
     // register with email and password
 
-    const RegisterWithEmailPassword = (email, password) =>{
+    const RegisterWithEmailPassword = (email, password) => {
         setLoading(true);
-        return createUserWithEmailAndPassword(auth,email, password )
+        return createUserWithEmailAndPassword(auth, email, password)
     };
 
 
     // signIN with email and password
 
-    const SignInWithEmailPassword = (email, password) =>{
+    const SignInWithEmailPassword = (email, password) => {
         setLoading(true)
         return signInWithEmailAndPassword(auth, email, password);
     }
@@ -71,14 +71,14 @@ export const AuthProvider = ({ children }) => {
 
     // Sign Out
 
-    const LogOut = () =>{
+    const LogOut = () => {
         setLoading(true);
         return signOut(auth)
     }
 
     // update userprofile
-    const updateUserProfile = (updatedData) =>{
-        
+    const updateUserProfile = (updatedData) => {
+
         return updateProfile(auth.currentUser, updatedData);
 
     }
@@ -150,23 +150,32 @@ export const AuthProvider = ({ children }) => {
 
     // }, [])
 
- // On auth observer
+    // On auth observer
 
 
-    useEffect(() => {
+    // useEffect(() => {
 
-        const unsubscribe = onAuthStateChanged(auth, currentUser =>{
-          setUser(currentUser);
-        //   console.log('state capture', currentUser)
-          
-          setLoading(false);
-        })
-    
-        return () =>{
-          unsubscribe();
-        }
-    
-      } ,[])
+    //     const unsubscribe = onAuthStateChanged(auth, currentUser => {
+    //         setUser(currentUser);
+    //         //   console.log('state capture', currentUser)
+
+    //         setLoading(false);
+    //     })
+
+    //     return () => {
+    //         unsubscribe();
+    //     }
+
+    // }, [])
+
+      useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+      setLoading(false);
+    });
+
+    return () => unsubscribe();
+  }, []);
 
 
 

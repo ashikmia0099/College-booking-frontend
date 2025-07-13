@@ -69,23 +69,23 @@ export default function All_College() {
   return (
     <div className="bg-white">
       <div className="max-w-7xl mx-auto bg-white lg:px-[88px]">
-        <h1 className="text-5xl text-center text-black py-10 uppercase font-bold">
+        <h1 className="text-3xl md:text-5xl text-center text-black py-10 uppercase font-bold">
           Our All College List
         </h1>
 
         {/* College Card */}
-        <div className="space-y-6 pb-20">
+        <div className="space-y-6 pb-20 px-3 lg:px-0">
           {
             college_Data?.map((data, index) => (
-              <div className="border-2 border-gray-500 px-3 py-3 rounded-xl flex justify-between items-center">
-                <div className="flex gap-x-5">
+              <div className="border-2 border-gray-500 px-3 py-3 rounded-xl md:flex justify-between items-center">
+                <div className="md:flex gap-x-5">
                  
-                  <img src={data.College_Image} alt={data.College_Name}  className="h-14 w-14 rounded-lg" />
+                  <img src={data.College_Image} alt={data.College_Name}  className="h-40 w-full md:h-14 md:w-14 rounded-lg" />
                   <div>
-                    <h4 className="text-lg font-semibold capitalize text-black">{data.College_Name}</h4>
-                    <div className="flex items-center gap-x-5">
+                    <h4 className="text-lg font-semibold capitalize text-black py-2 md:py-0">{data.College_Name}</h4>
+                    <div className="md:flex items-center gap-x-5">
                       <h4 className=' text-black'><span className="font-semibold text-black">Admission start:</span> {data.Admission_Start}</h4>
-                      <h4 className=' text-black'><span className="font-semibold className=' text-black'">Admission end:</span> {data.Admission_End}</h4>
+                      <h4 className=' text-black py-2 md:py-0'><span className="font-semibold className=' text-black'">Admission end:</span> {data.Admission_End}</h4>
                     </div>
                   </div>
                 </div>

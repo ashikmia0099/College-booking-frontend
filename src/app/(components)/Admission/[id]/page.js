@@ -126,19 +126,7 @@ export default function All_College_Deshboard() {
 
             const res = await response.json();
 
-            // if (res.insertedId) {
-            //     Swal.fire({
-            //         position: 'top-end',
-            //         icon: 'success',
-            //         title: 'Your Post Successfully Added!',
-            //         showConfirmButton: false,
-            //         timer: 1500
-            //     });
-            //     e.target.reset();
-
-
-            // } 
-
+           
             if (res.insertedId) {
                 // ✅ Save admitted college data
                 const admittedCollege = {
@@ -204,8 +192,8 @@ export default function All_College_Deshboard() {
 
 
         <div className="bg-white">
-            <div className="max-w-7xl mx-auto bg-white lg:px-[88px]  pb-20">
-                <h1 className="text-5xl text-center text-black py-10 uppercase font-bold">
+            <div className="max-w-7xl mx-auto bg-white px-3 lg:px-[88px]  pb-20">
+                <h1 className="text-3xl md:text-5xl text-center text-black py-10 uppercase font-bold">
                     College Admission Form
                 </h1>
 
@@ -217,7 +205,7 @@ export default function All_College_Deshboard() {
                         <legend className="text font-semibold pt-5 text-black">College Name </legend>
                         <input type="text" readOnly name='collegename' defaultValue={singledata?.College_Name || ''} className="input w-full text-white" placeholder="College Name" required />
 
-                        <div className=' grid grid-cols-2 gap-x-5'>
+                        <div className=' grid md:grid-cols-2 gap-x-5'>
                             <div>
                                 <legend className="text font-semibold pt-2 text-black">Student Name  </legend>
                                 <input type="text" readOnly defaultValue={user?.displayName || ''} name='studnentname' className="input w-full text-white" placeholder="College Name" required />
@@ -229,7 +217,7 @@ export default function All_College_Deshboard() {
                             </div>
                         </div>
 
-                        <div className=' grid grid-cols-2 gap-x-5'>
+                        <div className=' grid md:grid-cols-2 gap-x-5'>
                             <div>
                                 <legend className="text font-semibold pt-2 text-black">Email </legend>
                                 <input type="email" name='email' readOnly defaultValue={user?.email || ''} className="input w-full text-white bg-black" placeholder="Email" required />
@@ -240,7 +228,7 @@ export default function All_College_Deshboard() {
 
                             </div>
                         </div>
-                        <div className=' grid grid-cols-2 gap-x-5'>
+                        <div className=' grid md:grid-cols-2 gap-x-5'>
                             <div>
                                 <legend className="text font-semibold pt-2 text-black">Address </legend>
                                 <input type="text" name='address' className="input w-full text-white" placeholder="Address" required />

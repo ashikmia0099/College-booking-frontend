@@ -33,13 +33,13 @@ export default function All_collages() {
         <div className='bg-white'>
             <div className="  max-w-7xl mx-auto bg-[#ffffff]  lg:px-[88px]">
                 <div className=' '>
-                    <h1 className=' text-5xl text-center text-black py-10 uppercase font-bold'>Our All College</h1>
+                    <h1 className='text-3xl md:text-5xl text-center text-black py-10 uppercase font-bold'>Our All College</h1>
                 </div>
 
                 <div className=' grid md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-7 mt-6 pb-14'>
 
                     {
-                        college_Data.map((data, index) => (
+                        college_Data?.map((data, index) => (
                             <div key={data._id} className=' border-2 shadow-lg  rounded-2xl mb-10'>
                                 
                                 <img src={data.College_Image} alt={data.College_Name} className=' w-full h-60 rounded-t-2xl' />

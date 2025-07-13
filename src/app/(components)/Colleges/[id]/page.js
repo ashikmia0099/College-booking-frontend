@@ -60,16 +60,16 @@ export default function Contact() {
     return (
         <div className="bg-white">
             <div className="max-w-7xl mx-auto lg:px-[88px]">
-                <h1 className="text-5xl text-center text-black py-10 uppercase font-bold">
+                <h1 className=" text-3xl md:text-5xl text-center text-black py-10 uppercase font-bold">
                     {singledata?.College_Name}
                 </h1>
 
-                <div className=' grid grid-cols-2 gap-x-10 h-[70vh] items-center'>
+                <div className=' grid md:grid-cols-2 gap-x-10 lg:h-[70vh] items-center px-3 lg:px-0'>
                     <div>
                        
-                        <img src={singledata.College_Image} className=' h-[400px] w-full rounded-2xl' />
+                        <img src={singledata.College_Image} className=' h-[300px] lg:h-[400px] w-full rounded-2xl' />
                     </div>
-                    <div className='space-y-3'>
+                    <div className='space-y-3 pt-5 md:px-0'>
 
 
                         <p className='text-lg font-semibold text-black'>Admission Process : <span className=' font-normal text-black'>{singledata?.Admission_Process}</span> </p>

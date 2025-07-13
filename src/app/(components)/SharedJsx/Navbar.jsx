@@ -37,7 +37,7 @@ export default function Navbar() {
     { name: 'Colleges', href: '/Colleges' },
     { name: 'Admission', href: '/Admission' },
     
-    { name: 'About Us', href: '/About' },
+    // { name: 'About Us', href: '/About' },
     { name: 'Contact Us', href: '/Contact' },
     
   ]
@@ -78,7 +78,7 @@ export default function Navbar() {
 
         {/* Right Side - Desktop */}
         <div className="hidden lg:flex items-center gap-3">
-          <Input type="text" placeholder="Search Here" />
+          <input type="search" className="grow bg-black text-white " placeholder="Search " />
 
           {user ? (
             <DropdownMenu>
@@ -91,7 +91,7 @@ export default function Navbar() {
                 <DropdownMenuLabel>Account</DropdownMenuLabel>
                 <DropdownMenuSeparator />
                 <DropdownMenuRadioGroup value={position} onValueChange={setPosition}>
-                  <DropdownMenuRadioItem value="top">{user.displayName || "No Name"}</DropdownMenuRadioItem>
+                  <Link href={'/userDeshboard'} className=' hover:text-black'><DropdownMenuRadioItem value="top">{user.displayName || "No Name"}</DropdownMenuRadioItem></Link>
                   <DropdownMenuRadioItem value="bottom">{user.email}</DropdownMenuRadioItem>
                   <DropdownMenuRadioItem value="right" onClick={LogOut}>Logout</DropdownMenuRadioItem>
                 </DropdownMenuRadioGroup>

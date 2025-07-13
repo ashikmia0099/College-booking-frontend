@@ -15,7 +15,6 @@ export default function My_College() {
 
 
 
-
     const { college_Data, setcollege_Data, user, setUser } = useAuth();
     const [singledata, setSingleData] = useState([]);
     const [userAlldata, setuserAlldata] = useState([]);
@@ -119,7 +118,7 @@ export default function My_College() {
 
                                 {/* Admission Now Popover */}
                                 <div className=' pt-3 md:pt-0'>
-                                    <Link href={`/My_College${data._id}`}>
+                                    <Link href={`/My_College/${data._id}`}>
                                         <Button className="rounded-full cursor-pointer" onClick={() => setIsPopoverOpen(true)}>
                                             College Details
                                         </Button></Link>
